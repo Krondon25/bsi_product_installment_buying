@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* split_quo_rfq
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 04:17+0000\n"
+"PO-Revision-Date: 2021-08-12 04:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: split_quo_rfq
+#: model:res.groups,name:split_quo_rfq.group_split_rfq
+msgid "Allows split or extract RFQ"
+msgstr "Permet de diviser ou d'extraire la RFQ"
+
+#. module: split_quo_rfq
+#: model:res.groups,name:split_quo_rfq.group_split_quo
+msgid "Allows split or extract quotation"
+msgstr "Permet de diviser ou d'extraire la citation"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__create_uid
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__create_date
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__display_name
+msgid "Display Name"
+msgstr "Afficher un nom"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_quote_wizard__split_by__existing
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_rfq_wizard__split_by__existing
+msgid "Existing"
+msgstr "Existant"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__sale_order_id
+msgid "Existing Quote"
+msgstr "Citation existante"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__purchase_order_id
+msgid "Existing RFQ"
+msgstr "RFQ existant"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Extract Quotation"
+msgstr "Citation d'extraction"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+msgid "Extract RFQ"
+msgstr "Extraire RFQ"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Extracted"
+msgstr "Extrait"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_extract_id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__extract_id
+msgid "Extracted From"
+msgstr "Extrait de"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_extract_count
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__extract_count
+msgid "Extracted Quotes"
+msgstr "Citations extraites"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__id
+msgid "ID"
+msgstr "identifiant"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification sur"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__write_uid
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__write_date
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_quote_wizard__split_by__new
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_rfq_wizard__split_by__new
+msgid "New"
+msgstr "Nouveau"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_purchase_order
+msgid "Purchase Order"
+msgstr "Bon de commande"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Ligne de commande"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sale_order
+msgid "Sales Order"
+msgstr "Ordre des ventes"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de commande"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__tick
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__tick
+msgid "Select Product"
+msgstr "Sélectionner un produit"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "Split"
+msgstr "Diviser"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__split_by
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__split_by
+msgid "Split By"
+msgstr "Divisé par"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Split Quotation"
+msgstr "Citation divisée"
+
+#. module: split_quo_rfq
+#: model:ir.actions.act_window,name:split_quo_rfq.sh_split_quote_wizard_action
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+msgid "Split Quote"
+msgstr "Citer"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sh_split_quote_wizard
+msgid "Split Quote Wizard"
+msgstr "Assistant de citation divisée"
+
+#. module: split_quo_rfq
+#: model:ir.actions.act_window,name:split_quo_rfq.sh_split_rfq_wizard_action
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+msgid "Split RFQ"
+msgstr "RFQ divisé"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sh_split_rfq_wizard
+msgid "Split RFQ Wizard"
+msgstr "Assistant RFQ divisé"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Splited"
+msgstr "Gonflé"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_split_id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__split_id
+msgid "Splited From"
+msgstr "Fractionné de"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_split_count
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__split_count
+msgid "Splited Quotes"
+msgstr "Citations fractionnées"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Tick/Untick"
+msgstr "Cocher / défier"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "or"
+msgstr "ou"

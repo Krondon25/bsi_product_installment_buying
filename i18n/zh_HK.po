@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* split_quo_rfq
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 04:17+0000\n"
+"PO-Revision-Date: 2021-08-12 04:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: split_quo_rfq
+#: model:res.groups,name:split_quo_rfq.group_split_rfq
+msgid "Allows split or extract RFQ"
+msgstr "允许分割或提取RFQ"
+
+#. module: split_quo_rfq
+#: model:res.groups,name:split_quo_rfq.group_split_quo
+msgid "Allows split or extract quotation"
+msgstr "允许分割或提取引号"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__create_uid
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__create_uid
+msgid "Created by"
+msgstr "由...制作"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__create_date
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__display_name
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_quote_wizard__split_by__existing
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_rfq_wizard__split_by__existing
+msgid "Existing"
+msgstr "现存的"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__sale_order_id
+msgid "Existing Quote"
+msgstr "现有报价"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__purchase_order_id
+msgid "Existing RFQ"
+msgstr "现有的RFQ."
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Extract Quotation"
+msgstr "提取报价"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+msgid "Extract RFQ"
+msgstr "提取RFQ."
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Extracted"
+msgstr "提取了"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_extract_id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__extract_id
+msgid "Extracted From"
+msgstr "摘自"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_extract_count
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__extract_count
+msgid "Extracted Quotes"
+msgstr "提取的报价"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard____last_update
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard____last_update
+msgid "Last Modified on"
+msgstr "最后修改了"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__write_uid
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最后更新"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__write_date
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__write_date
+msgid "Last Updated on"
+msgstr "上次更新了"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_quote_wizard__split_by__new
+#: model:ir.model.fields.selection,name:split_quo_rfq.selection__sh_split_rfq_wizard__split_by__new
+msgid "New"
+msgstr "新的"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_purchase_order
+msgid "Purchase Order"
+msgstr "采购订单"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "采购订单线"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sale_order
+msgid "Sales Order"
+msgstr "销售订单"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "销售订单线"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order_line__tick
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order_line__tick
+msgid "Select Product"
+msgstr "选择产品"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "Split"
+msgstr "分裂"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_quote_wizard__split_by
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sh_split_rfq_wizard__split_by
+msgid "Split By"
+msgstr "分裂"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Split Quotation"
+msgstr "拆分报价"
+
+#. module: split_quo_rfq
+#: model:ir.actions.act_window,name:split_quo_rfq.sh_split_quote_wizard_action
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+msgid "Split Quote"
+msgstr "拆分报价"
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sh_split_quote_wizard
+msgid "Split Quote Wizard"
+msgstr "拆分报价向导"
+
+#. module: split_quo_rfq
+#: model:ir.actions.act_window,name:split_quo_rfq.sh_split_rfq_wizard_action
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+msgid "Split RFQ"
+msgstr "拆分RFQ."
+
+#. module: split_quo_rfq
+#: model:ir.model,name:split_quo_rfq.model_sh_split_rfq_wizard
+msgid "Split RFQ Wizard"
+msgstr "拆分RFQ向导"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Splited"
+msgstr "缝合"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_split_id
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__split_id
+msgid "Splited From"
+msgstr "缝合"
+
+#. module: split_quo_rfq
+#: model:ir.model.fields,field_description:split_quo_rfq.field_purchase_order__po_split_count
+#: model:ir.model.fields,field_description:split_quo_rfq.field_sale_order__split_count
+msgid "Splited Quotes"
+msgstr "缝合的报价"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.split_quo_rfq_sale_order_form_selection
+msgid "Tick/Untick"
+msgstr "勾选/不奇特"
+
+#. module: split_quo_rfq
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_quote_wizard_view
+#: model_terms:ir.ui.view,arch_db:split_quo_rfq.sh_split_rfq_wizard_view
+msgid "or"
+msgstr "或者"

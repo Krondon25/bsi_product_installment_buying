@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="split_quo_rfq_sale_order_form_selection" model="ir.ui.view">
+        <field name="name">split.quo.rfq.sale.order.form.selection</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="before">
+                <button name="btn_tick_untick" type="object" class="oe_stat_button btn-primary" string="Marcar/Desmarcar" groups="split_quo_rfq.group_split_quo" attrs="{'invisible': [('parent.state','!=', 'draft')]}"></button>
+                <field name="tick" groups="split_quo_rfq.group_split_quo" attrs="{'readonly': [('parent.state','!=', 'draft')]}" />
+            </xpath>
+
+            <xpath expr="//header/button[@name='action_cancel']" position="after">
+                <button name="action_split" states="draft,sent" type="object" string="Dividir" groups="split_quo_rfq.group_split_quo" />
+            </xpath>
+
+            <xpath expr="//header/button[@name='action_cancel']" position="after">
+                <button name="action_extract" states="draft,sent,sale" type="object" string="Extraer" groups="split_quo_rfq.group_split_quo" />
+            </xpath>
+            <xpath expr="//field[@name='order_line']" position="before">
+                <div class="o_row" style="margin: 15px 0;">
+                    <button name="action_check" icon="fa-check" class="btn btn-primary" type="object" />
+                    <button name="action_uncheck" icon="fa-close" class="btn btn-primary" type="object" />
+                </div>
+            </xpath>
+            <field name="user_id" position="after">
+                <field name="extract_id" attrs="{'invisible':[('extract_id','=',False)]}" />
+                <field name="split_id" attrs="{'invisible':[('split_id','=',False)]}" />
+            </field>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_extract_quote" type="object" class="oe_stat_button" icon="fa-file-archive-o" attrs="{'invisible': [('extract_count', '=', 0)]}">
+                    <field name="extract_count" widget="statinfo" string="Extracted" />
+                </button>
+                <button name="action_view_split_quote" type="object" class="oe_stat_button" icon="fa-chain-broken" attrs="{'invisible': [('split_count', '=', 0)]}">
+                    <field name="split_count" widget="statinfo" string="Splited" />
+                </button>
+            </xpath>
+        </field>
+    </record>
+    <record id="split_quo_rfq_purchase_order_form" model="ir.ui.view">
+        <field name="name">split.quo.rfq.purchase.order.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="before">
+                <button name="btn_tick_untick" type="object" class="oe_stat_button btn-primary" string="Marcar/Desmarcar" groups="split_quo_rfq.group_split_rfq" attrs="{'invisible': [('parent.state','!=', 'draft')]}"></button>
+                <field name="tick" groups="split_quo_rfq.group_split_rfq" attrs="{'readonly': [('parent.state','!=', 'draft')]}" />
+            </xpath>
+
+            <xpath expr="//header/button[@name='button_cancel']" position="after">
+                <button name="action_split" states="draft,sent" type="object" string="Dividir RFQ" groups="split_quo_rfq.group_split_rfq" />
+            </xpath>
+
+            <xpath expr="//header/button[@name='button_cancel']" position="after">
+                <button name="action_extract" states="draft,sent,purchase" type="object" string="Extraer RFQ" groups="split_quo_rfq.group_split_rfq" />
+            </xpath>
+            <xpath expr="//field[@name='order_line']" position="before">
+                <div class="o_row" style="margin: 15px 0;">
+                    <button name="action_check" icon="fa-check" class="btn btn-primary" type="object" />
+                    <button name="action_uncheck" icon="fa-close" class="btn btn-primary" type="object" />
+                </div>
+            </xpath>
+            <field name="user_id" position="after">
+                <field name="po_extract_id" attrs="{'invisible':[('po_extract_id','=',False)]}" />
+                <field name="po_split_id" attrs="{'invisible':[('po_split_id','=',False)]}" />
+            </field>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_extract_quote" type="object" class="oe_stat_button" icon="fa-file-archive-o" attrs="{'invisible': [('po_extract_count', '=', 0)]}">
+                    <field name="po_extract_count" widget="statinfo" string="Extracted" />
+                </button>
+                <button name="action_view_split_quote" type="object" class="oe_stat_button" icon="fa-chain-broken" attrs="{'invisible': [('po_split_count', '=', 0)]}">
+                    <field name="po_split_count" widget="statinfo" string="Splited" />
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
