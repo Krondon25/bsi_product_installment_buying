@@ -5,6 +5,9 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"></field>
         <field name="arch" type="xml">
+            <field name="payment_term_id" position="after">
+                <field name="check_cant" invisible="True"/>
+            </field>
             <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="before">
                 <button name="btn_tick_untick" type="object" class="oe_stat_button btn-primary" string="Marcar/Desmarcar" groups="split_quo_rfq.group_split_quo" attrs="{'invisible': [('parent.state','!=', 'draft')]}"></button>
                 <field name="tick" groups="split_quo_rfq.group_split_quo" attrs="{'readonly': [('parent.state','!=', 'draft')]}" />
@@ -42,6 +45,9 @@
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form"></field>
         <field name="arch" type="xml">
+            <field name="date_planned" position="after">
+                <field name="check_cant"  invisible="True"/>
+            </field>
             <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="before">
                 <button name="btn_tick_untick" type="object" class="oe_stat_button btn-primary" string="Marcar/Desmarcar" groups="split_quo_rfq.group_split_rfq" attrs="{'invisible': [('parent.state','!=', 'draft')]}"></button>
                 <field name="tick" groups="split_quo_rfq.group_split_rfq" attrs="{'readonly': [('parent.state','!=', 'draft')]}" />

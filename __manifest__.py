@@ -22,8 +22,6 @@
         "views/split_view.xml",
         "wizard/split_quote_wizard.xml",
         "wizard/split_rfq_wizard.xml",
-        "views/sale_order.xml",
-        "views/purchase_order.xml",
     ],
 
     "auto_install": False,

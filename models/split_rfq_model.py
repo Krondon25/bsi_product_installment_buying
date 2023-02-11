@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (C) Softhealer Technologies.
 
-from odoo import models, fields
+from odoo import models, fields,api
 
 
 class PurchaseOrderLine(models.Model):
@@ -27,6 +27,7 @@ class PurchaseOrder(models.Model):
         'Extracted Quotes', compute='_compute_po_extract_count')
     po_split_count = fields.Integer(
         'Splited Quotes', compute='_compute_po_split_count')
+    check_cant = fields.Boolean('check real', default=False)
 
     def _compute_po_extract_count(self):
         if self:
@@ -118,3 +119,15 @@ class PurchaseOrder(models.Model):
         if self.order_line:
             for line in self.order_line:
                 line.tick = False
+
+    @api.constrains('order_line')
+    def _check_cant_purchase_order(self):
+        if not self.check_cant:
+            if self.po_extract_id:
+                purchase_extract = self.env['purchase.order'].search([('id', '=', self.po_extract_id.id)])
+                for products in purchase_extract.order_line:
+                    if products.name == self.order_line.name:
+                        products.product_qty = products.product_qty - self.order_line.product_qty
+                        self.check_cant = True
+                        purchase_extract.check_cant = True
+

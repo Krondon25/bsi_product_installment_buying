@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (C) Softhealer Technologies.
 
-from odoo import models, fields
+from odoo import models, fields,api
 
 
 class SaleOrderLine(models.Model):
@@ -27,6 +27,7 @@ class SaleOrder(models.Model):
         'Extracted Quotes', compute='_compute_extract_count')
     split_count = fields.Integer(
         'Splited Quotes', compute='_compute_split_count')
+    check_cant = fields.Boolean('check real', default=False)
 
     def _compute_extract_count(self):
         if self:
@@ -117,3 +118,14 @@ class SaleOrder(models.Model):
         if self.order_line:
             for line in self.order_line:
                 line.tick = False
+
+    @api.constrains('order_line')
+    def _check_cant_order(self):
+        if not self.check_cant:
+            if self.extract_id:
+                sale_extract = self.env['sale.order'].search([('id', '=', self.extract_id.id)])
+                for products in sale_extract.order_line:
+                    if products.name == self.order_line.name:
+                        products.product_uom_qty = products.product_uom_qty - self.order_line.product_uom_qty
+                        self.check_cant = True
+                        sale_extract.check_cant = True
