@@ -129,5 +129,5 @@ class PurchaseOrder(models.Model):
                     if products.name == self.order_line.name:
                         products.product_qty = products.product_qty - self.order_line.product_qty
                         self.check_cant = True
-                        purchase_extract.check_cant = True
+
 

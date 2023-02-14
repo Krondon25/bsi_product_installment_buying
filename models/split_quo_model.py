@@ -128,4 +128,4 @@ class SaleOrder(models.Model):
                     if products.name == self.order_line.name:
                         products.product_uom_qty = products.product_uom_qty - self.order_line.product_uom_qty
                         self.check_cant = True
-                        sale_extract.check_cant = True
+
